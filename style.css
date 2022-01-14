@@ -1,0 +1,64 @@
+*{
+    margin: 55; padding: 55;
+}
+body{
+    width: 90%;
+    background:radial-gradient(ellipse, #ddd0a0, #c5a129) ;
+    overflow: hidden;
+}
+dialog{  
+    background:radial-gradient(ellipse, #fdf2cc, #af9749) ;
+    font-family:  "DejaVu",monospace ;
+    font-size: large;
+    text-align: center  ;
+    height: 9vh;
+    width:30vw;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+}
+ dialog.showModal{
+     background-color: rgba(0, 0, 0, 0.9);
+ }
+.close{
+    background-color:rgb(247, 141, 100);
+    font-family:  "DejaVu",monospace ;
+    font-size: large;
+    border-radius: 5%;
+    
+}
+.img-1{
+    background-color: rgb(246, 247, 185);
+    box-shadow: 0 0 15px black;
+    position:absolute;
+    height: auto;
+    width:22vw;
+    border-radius: 3vw;
+    top: 20%;
+    left:20%;
+}
+.img-2{
+    background-color: rgb(246, 247, 185);
+    box-shadow: 0 0 15px black;
+    position:absolute;
+    height: auto;
+    width: 22vw;
+    border-radius:3vw;
+    top: 20%;
+    left: 55%; 
+}
+.button{
+    font-family:  "DejaVu" ,monospace ;
+    font-size: large;
+    position:absolute;
+    top: 70%;
+    left:39%;
+    height: auto;
+    width: 20vw;
+    color:rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    background-color:rgb(246, 247, 185);
+}
+.active{
+    background-color:rgb(247, 141, 100);
+}
