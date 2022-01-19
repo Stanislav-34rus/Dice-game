@@ -24,14 +24,12 @@ image2 = document.getElementById("image2");
 button = document.getElementById("button");
 
 
-
 function list() {
     image.src = imags[Math.floor(Math.random() * imags.length)];
     image2.src = imags2[Math.floor(Math.random() * imags2.length)];
 
 
 }
-//=====================function start Эффект перелистывания==================================
 
 function start() {
 
@@ -61,33 +59,6 @@ function start() {
 document.querySelector('.button').addEventListener('click', start);
 
 
-
-
-
-
-
-//================================Резерв==================================
-/*function start() {
-    out = "YES!!!"
-    count = 0;
-    intervalId = setInterval(function () {
-        count++;
-        if (count == 30) {
-            clearInterval(intervalId);
-        }
-        list();
-        if (count == 30 && image.src === image2.src) {
-            document.querySelector('.out').innerHTML = out;
-            console.log('YES');
-        }
-    }, 100);
-}
-document.querySelector('.button').addEventListener('click', start);
-*/
-
-//====================function a & b  красят кнопку при наведении мыши.==========================
-
-
 function a() {
     document.querySelector(".button").classList.add('active');
 }
@@ -98,4 +69,3 @@ function b() {
 document.querySelector('.button').onmouseleave = b;
 
 
-//==============================================================================
