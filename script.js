@@ -17,25 +17,15 @@ let imags2 = [
 ]
 
 
-
-image = document.getElementById("image");
-image2 = document.getElementById("image2");
-
-button = document.getElementById("button");
-
-
 function list() {
     image.src = imags[Math.floor(Math.random() * imags.length)];
     image2.src = imags2[Math.floor(Math.random() * imags2.length)];
-
-
 }
 
 function start() {
 
     let dialog = document.querySelector('dialog');
-
-    count = 0;
+    let count = 0;
 
     intervalId = setInterval(function () {
         count++;
