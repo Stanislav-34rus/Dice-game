@@ -26,7 +26,6 @@ function list() {
 
 function start() {
 
-
     count = 0;
     btn.style.display = 'none';
 
