@@ -26,11 +26,13 @@ function start() {
 
     let dialog = document.querySelector('dialog');
     count = 0;
+    btn.style.display = 'none';
 
     intervalId = setInterval(function () {
         count++;
         if (count == 30) {
             clearInterval(intervalId);
+            btn.style.display = '';
         }
         list();
         if (count == 30 && image.src === image2.src) {
@@ -46,7 +48,7 @@ function start() {
     }
 
 }
-document.querySelector('.button').addEventListener('click', start);
+btn.addEventListener('click', start);
 
 
 function a() {
