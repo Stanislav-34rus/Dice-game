@@ -15,7 +15,7 @@ let imags2 = [
     src = "https://sun9-87.userapi.com/impg/fp_DvrNXAXYKQ9Rxxkijdqy1Pf1aAlkIq0QfMQ/DYE_ZFaUvZk.jpg?size=1200x1200&quality=96&sign=7528bedcf08b5ca7b4c3acf3f1611119&type=album",
     src = "https://sun9-36.userapi.com/impg/cGgLAl2RduDMem5eA9zvbrtWk0tR0wQAQZvXoQ/nYV-SAn7W_Q.jpg?size=557x557&quality=96&sign=857c8565a752adf90ddc04968d33e40a&type=album"
 ]
-
+let btn = document.querySelector('.button');
 
 function list() {
     image.src = imags[Math.floor(Math.random() * imags.length)];
@@ -25,7 +25,7 @@ function list() {
 function start() {
 
     let dialog = document.querySelector('dialog');
-    let count = 0;
+    count = 0;
 
     intervalId = setInterval(function () {
         count++;
