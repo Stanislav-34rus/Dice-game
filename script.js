@@ -16,6 +16,8 @@ let imags2 = [
     src = "https://sun9-36.userapi.com/impg/cGgLAl2RduDMem5eA9zvbrtWk0tR0wQAQZvXoQ/nYV-SAn7W_Q.jpg?size=557x557&quality=96&sign=857c8565a752adf90ddc04968d33e40a&type=album"
 ]
 let btn = document.querySelector('.button');
+let dialog = document.querySelector('dialog');
+
 
 function list() {
     image.src = imags[Math.floor(Math.random() * imags.length)];
@@ -24,7 +26,7 @@ function list() {
 
 function start() {
 
-    let dialog = document.querySelector('dialog');
+
     count = 0;
     btn.style.display = 'none';
 
